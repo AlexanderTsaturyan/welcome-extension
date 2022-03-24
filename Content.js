@@ -1,7 +1,7 @@
-const newNode = document.createElement("p");
-const textNode = document.createTextNode("Welcome");
-newNode.appendChild(textNode);
-newNode.classList.add('welcome');
+let newChild = document.createElement("p");
+let text = document.createTextNode("Welcome");
+newChild.appendChild(text);
+newChild.classList.add('welcome');
 
-const parent = document.getElementsByTagName('div')[0];
-parent.insertBefore(newNode, parent.children[0]);
+let parent = document.getElementsByTagName('div')[0];
+parent.insertBefore(newChild, parent.children[0]);
